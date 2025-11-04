@@ -35,7 +35,7 @@ function addMenu(){
 function filterMenu(){
     if(foodNames.length === 0) return
     for(let i = 0; i < foodNames.length; i++){        
-        if(foodNames[i].innerHTML.indexOf(filterInput.value.toLowerCase()) !== -1
+        if(foodNames[i].innerHTML.toLowerCase().indexOf(filterInput.value.toLowerCase()) !== -1
             || foodPrices[i].innerHTML.indexOf(filterInput.value) !== -1
         )
         {
