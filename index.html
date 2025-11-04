@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p>Restaurant Menu</p>
+    <div>
+        <input type="text" placeholder="Dish name" class="dishName">
+        <input type="text" placeholder="cuisine" class="cuisine">
+        <input type="text" placeholder="Type" class="type">
+        <input type="number" placeholder="price" class="price">
+        <input type="text" placeholder="Spice Level" class="spiceLvl">
+    </div>
+    <button onclick="addMenu()">Add</button>
+
+    <div>
+        <h2>Filter Items Using Names and Price</h2>
+        <input id="filter-input" type="text" onkeyup="filterMenu()">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dish</th>
+                <th>Cuisine</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Spice Level</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
